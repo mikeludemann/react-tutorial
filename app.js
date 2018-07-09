@@ -62,7 +62,8 @@ app.use(session({
  * Directory: routes
  */
 
-app.get("/", require("./routes").index);
+app.get("/", require("./routes/index").index);
+app.get("/home", require("./routes/home").home);
 
 /**
  * Error handler
