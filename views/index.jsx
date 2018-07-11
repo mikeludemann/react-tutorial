@@ -6,10 +6,10 @@ import Footer from "./includes/footer.jsx";
 import Head from "./includes/init.jsx";
 import Title from "./includes/title.jsx";
 import Line from "./components/line.jsx";
-import {SortingList, UnsortingList} from "./components/list.jsx";
+import {SortingList, UnsortingList, ModernList} from "./components/list.jsx";
 import Link from "./components/link.jsx";
 
-export default class DefaultContainer extends React.Component {
+export default class Index extends React.Component {
   render() {
     return (
         <html>
@@ -21,9 +21,7 @@ export default class DefaultContainer extends React.Component {
                 </Header>
                 <Line/>
                 <div>
-                    <SortingList
-                        items={this.props.listItems}
-                    />
+                    <ModernList items={this.props.listItems}/>
                     <Link
                         url={this.props.url}
                         name={this.props.name}

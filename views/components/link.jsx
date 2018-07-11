@@ -8,7 +8,7 @@ export default class Link extends React.Component {
     render() {
         return (
             <a href={this.props.url} name={this.props.name}>
-                {this.props.text}
+                <div>{this.props.text}</div>
             </a>
         );
     }
