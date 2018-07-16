@@ -1,5 +1,5 @@
 exports.home = function (req, res) {
-    res.render("Home", {
+    res.render("home", {
         title: "Home",
         fieldElements: [
             { id: "FirstName", headline: "First Name", type: "text", name: "First", value: "", placeholder: "First Name" },

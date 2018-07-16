@@ -41,12 +41,12 @@ export class UnsortingList extends React.Component {
 export class ModernList extends React.Component {
     render() {
         return (
-            <div className="List">
+            <div className="list--container">
                 {this.props.items.map((item) => {
-                    return <div className="List--Item">
-                        <span className="List--Item--Number">{item.id}</span>
+                    return <div className="list--container--item">
+                        <span className="list--container--item--Number">{item.id}</span>
                         <span>.</span>
-                        <span className="List--Item--Text">{item.text}</span>
+                        <span className="list--container--item--Text">{item.text}</span>
                     </div>;
                 })}
             </div>

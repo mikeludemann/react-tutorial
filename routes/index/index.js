@@ -6,7 +6,7 @@ exports.index = function (req, res) {
             {id: 2, text: "hi"}
         ],
         url: "/home",
-        name: "home",
+        name: "Home",
         text: "Go to home"
     });
 };

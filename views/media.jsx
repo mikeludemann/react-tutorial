@@ -7,9 +7,9 @@ import Head from "./includes/init.jsx";
 import Title from "./includes/title.jsx";
 import Line from "./components/line.jsx";
 import Link from "./components/link.jsx";
-import { InputWithHeadline } from "./components/input.jsx";
+import { Image } from "./components/image.jsx";
 
-export default class Home extends React.Component {
+export default class Media extends React.Component {
     render() {
         return (
             <html>
@@ -20,9 +20,7 @@ export default class Home extends React.Component {
                     <Header/>
                     <Line />
                     <div>
-                        <form>
-                            <InputWithHeadline fields={this.props.fieldElements}/>
-                        </form>
+                        <Image images={this.props.image} />
                         <Link
                             url={this.props.url}
                             name={this.props.nameTo}

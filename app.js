@@ -64,6 +64,7 @@ app.use(session({
 
 app.get("/", require("./routes/index").index);
 app.get("/home", require("./routes/home").home);
+app.get("/media", require("./routes/media").media);
 
 /**
  * Error handler

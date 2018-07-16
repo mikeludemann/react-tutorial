@@ -14,11 +14,10 @@ export default class Index extends React.Component {
     return (
         <html>
             <Head>
+                <Title title={this.props.title}/>
             </Head>
             <body>
-                <Header>
-                    <Title title={this.props.title}/>
-                </Header>
+                <Header/>
                 <Line/>
                 <div>
                     <ModernList items={this.props.listItems}/>
