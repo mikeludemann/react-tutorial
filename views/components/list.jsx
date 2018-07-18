@@ -44,9 +44,9 @@ export class ModernList extends React.Component {
             <div className="list--container">
                 {this.props.items.map((item) => {
                     return <div className="list--container--item">
-                        <span className="list--container--item--Number">{item.id}</span>
-                        <span>.</span>
-                        <span className="list--container--item--Text">{item.text}</span>
+                        <span className="list--container--item--number">{item.id}</span>
+                        <span className="list--container--item--separator">{item.separator}</span>
+                        <span className="list--container--item--text">{item.text}</span>
                     </div>;
                 })}
             </div>

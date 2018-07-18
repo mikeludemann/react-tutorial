@@ -27,10 +27,14 @@ export class InputWithHeadline extends React.Component {
 }
 
 InputWithHeadline.propTypes = {
-    id: PropTypes.string.isRequired,
-    headline: PropTypes.string,
-    type: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    value: PropTypes.string,
-    placeholder: PropTypes.string
+    fields: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            headline: PropTypes.string,
+            type: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+            value: PropTypes.string,
+            placeholder: PropTypes.string
+        }).isRequired
+    ).isRequired
 };

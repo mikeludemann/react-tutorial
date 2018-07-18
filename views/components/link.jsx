@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from "prop-types"
 
 export default class Link extends React.Component {
     constructor(props){
@@ -12,4 +13,10 @@ export default class Link extends React.Component {
             </a>
         );
     }
+}
+
+Link.propTypes = {
+    url: PropTypes.string.isRequired,
+    name: PropTypes.string,
+    text: PropTypes.string.isRequired
 }
