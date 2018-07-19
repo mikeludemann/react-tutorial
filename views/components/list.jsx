@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 const listStyle = {
     listStyleType: 'none',
@@ -52,4 +52,32 @@ export class ModernList extends React.Component {
             </div>
         );
     }
+}
+
+SortingList.propTypes = {
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number,
+            text: PropTypes.string.isRequired
+        }).isRequired
+    ).isRequired
+}
+
+UnsortingList.propTypes = {
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number,
+            text: PropTypes.string.isRequired
+        }).isRequired
+    ).isRequired
+}
+
+ModernList.propTypes = {
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number,
+            separator: PropTypes.string,
+            text: PropTypes.string.isRequired
+        }).isRequired
+    ).isRequired
 }
