@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export class Person extends React.Component {
+
     render() {
         return (
             <div className="person--container">
                 {this.props.persons.map((field) => {
                     return <div className="person--fullName">
                         <span className="firstName">{field.firstName}</span>
-                        <span className="secondName"> {field.secondName}</span>
-                        <span className="lastName"> {field.lastName}</span>
+                        <span className="secondName">{field.secondName}</span>
+                        <span className="lastName">{field.lastName}</span>
                     </div>
                 })}
             </div>
@@ -27,8 +28,8 @@ export class PersonWithHeadline extends React.Component {
                 {this.props.persons.map((field) => {
                     return <div className="person--fullName">
                         <span className="firstName">{field.firstName}</span>
-                        <span className="secondName"> {field.secondName}</span>
-                        <span className="lastName"> {field.lastName}</span>
+                        <span className="secondName">{field.secondName}</span>
+                        <span className="lastName">{field.lastName}</span>
                     </div>
                 })}
             </div>
@@ -46,8 +47,8 @@ export class PersonWithHeadlineAndMail extends React.Component {
                 {this.props.persons.map((field) => {
                     return <div className="person--fullName">
                         <span className="firstName">{field.firstName}</span>
-                        <span className="secondName"> {field.secondName}</span>
-                        <span className="lastName"> {field.lastName}</span>
+                        <span className="secondName">{field.secondName}</span>
+                        <span className="lastName">{field.lastName}</span>
                         <span className="mail"><a href={'mailto:' + field.mail}>{field.mail}</a></span>
                     </div>
                 })}

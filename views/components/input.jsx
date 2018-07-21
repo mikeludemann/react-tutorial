@@ -50,16 +50,16 @@ export class Input extends React.Component {
 
 export class Textarea extends React.Component {
     render() {
-        return(
+        return (
             <div className="form--element">
                 <div className="textarea--element">
-                    <textarea 
-                        maxlength={this.props.maxlength} 
-                        name={this.props.name} 
-                        rows={this.props.rows} 
-                        cols={this.props.cols} 
-                        placeholder={this.props.placeholder} 
-                        required={this.props.required} 
+                    <textarea
+                        maxlength={this.props.maxlength}
+                        name={this.props.name}
+                        rows={this.props.rows}
+                        cols={this.props.cols}
+                        placeholder={this.props.placeholder}
+                        required={this.props.required}
                         autofocus={this.props.autofocus}
                     />
                 </div>
