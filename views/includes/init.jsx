@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Title from './title.jsx';
-
 export default class Head extends React.Component {
     render() {
         return (
